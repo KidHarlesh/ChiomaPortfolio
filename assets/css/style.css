@@ -682,7 +682,7 @@ hr {
   }
   .st-nav .st-nav-list {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     left: 0;
     background-color: #070d1b;
     padding: 10px 0;
@@ -926,7 +926,29 @@ hr {
   position: relative;
   height: 40%;
   background-color: #080808;
+  background-image: url("../img/laptopImage.webp");
+  background-repeat: no-repeat;
+ 
 }
+
+
+
+.st-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark effect */
+  z-index: 2;
+}
+
+.st-hero, .st-hero-text {
+  position: relative;
+  z-index: 3;
+
+}
+
 
 .st-hero-wrap .st-hero-img {
   position: absolute;
@@ -966,6 +988,7 @@ hr {
   color: #fdfeff;
   line-height: 1;
   text-align: center;
+  font-family: "Satisfy", cursive;
 }
 
 .st-hero.st-style1 .st-hero-text h2 {
@@ -1280,8 +1303,11 @@ canvas {
   .st-hero-wrap .st-hero-img {
     display: none;
   }
+  
+  
 
 }
+
 
 @media screen and (max-width: 767px) {
   .st-hero.st-style2 h1 {
@@ -1302,14 +1328,15 @@ canvas {
   text-align: center;
 }
 
-
-
 }
+
+
+
 @media screen and (min-width: 414px) and (max-width: 480px) {
   .st-hero.st-style1 {
     height: 800px;
+    
   }
-
 }
 
 
@@ -1318,18 +1345,51 @@ canvas {
     height: 670px;
   }
   .st-hero.st-style1 .st-hero-text h1 {
-    font-size: 70px;
+    font-size: 48px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 428px) {
+  .st-hero.st-style1 .st-hero-text h1 {
+    font-size: 55px; /* or any size you prefer */
+    font-weight: 900;
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 850px) and (orientation: portrait) {
-  .st-hero.st-style1 {
-    height: 1100px;
+@media screen and (min-width: 428px) {
+  .st-hero.st-style1 .st-hero-text h1 {
+    font-size: 55px; /* or any size you prefer */
+    
   }
 }
+/* ipad */
+@media screen and (min-width: 800px) and (max-width: 850px) and (orientation: portrait) {
+  .st-hero.st-style1 {
+    height: 854px;
+  }
+  .st-hero.st-style1 .st-hero-text h1 {
+    font-size: 80px; /* or any size you prefer */
+    margin-top: 50px;
+}
+.st-hero-wrap {
+  position: relative;
+  height: 100%;
+  background-color: #080808;
+  background-image: url("../img/laptopImage.webp");
+  background-repeat: no-repeat;
+}
+}
+
+
 @media screen and (min-width: 1024px) {
   .st-hero.st-style1 {
     height: 700px;
+  }
+  .st-hero.st-style1 .st-hero-text h1 {
+    font-size: 120px; /* or any size you prefer */
+    margin-top: 20px;
+    
   }
 }
 
