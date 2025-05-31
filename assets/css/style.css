@@ -46,6 +46,7 @@ html {
   font-weight: 400;
   line-height: 1.6em;
   overflow-x: hidden;
+  font-family: "DM Serif Display", serif;
 }
 
 h1,
@@ -988,7 +989,7 @@ hr {
   color: #fdfeff;
   line-height: 1;
   text-align: center;
-  font-family: "Satisfy", cursive;
+  font-family: "DM Serif Display", serif;
 }
 
 .st-hero.st-style1 .st-hero-text h2 {
@@ -997,6 +998,7 @@ hr {
   font-weight: 300;
   color: #a9adb8;
   text-align: center;
+  font-family: "DM Serif Display", serif;
 }
 
 .st-hero.st-style1 .st-hero-text h3 {
@@ -1006,6 +1008,7 @@ hr {
   font-weight: 300;
   color: #e6a100;
   text-align: center;
+  font-family: "DM Serif Display", serif;
 }
 
 .st-social-group {
